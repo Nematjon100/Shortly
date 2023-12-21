@@ -72,6 +72,22 @@ img {
 }
 
 
+/* Placeholder styles */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(52, 49, 61, 0.5);
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(52, 49, 61, 0.5);
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(52, 49, 61, 0.5);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba(52, 49, 61, 0.5);
+  opacity: 1;
+}
+
+
 /* VISUALLY-HIDDEN */
 .visually-hidden {
   position: absolute;
@@ -110,6 +126,7 @@ img {
   font-weight: bold;
   background-color: var(--accent-color);
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .button:hover {
@@ -130,11 +147,11 @@ img {
   padding: 17px 40px;
 }
 
-.button--rectangle {
+.button--rectangle-small {
   border-radius: 5px;
 }
 
-.button--rectangle {
+.button--rectangle-big {
   border-radius: 10px;
 }
 
@@ -271,8 +288,80 @@ img {
 
 .hero__link {
 }
-.button {
+
+
+/* URL-SHORTENER */
+.shortener-features-wrapper {
+  background-color: var(--light-bg);
 }
+
+.shortener-features-wrapper__url-shortener {
+}
+
+.url-shortener {
+
+}
+
+
+.url-shortener__form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 52px 64px 52px;
+  background-color: #3A3054;
+  background-image: url('../img/purple-bg.svg'),
+  url('../img/purple-bg.svg');
+  background-position:650px -180px, -100px 25px;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+}
+
+.url-shortener__input-wrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+}
+
+.url-shortener__input {
+  flex-grow: 1;
+  display: block;
+  padding: 12px 28px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  border: 3px solid transparent;
+  border-radius: 10px;
+}
+
+
+.url-shortener__submit {
+}
+
+.url-shortener__input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: var(--error-color);
+  color: rgba(244, 99, 99);
+}
+
+.url-shortener__error-msg {
+  display: none;
+}
+
+.url-shortener__input:not(:focus):not(:placeholder-shown):invalid ~ .url-shortener__error-msg {
+  display: block;
+  position: absolute;
+  bottom: 26px;
+  left: 64px;
+  font-weight: 500;
+  line-height: 18px;
+  font-size: 16px;
+  font-style: italic;
+  color: var(--error-color);
+  letter-spacing: 0.11px;
+}
+
 
 
 
