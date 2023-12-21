@@ -292,6 +292,7 @@ img {
 
 /* URL-SHORTENER */
 .shortener-features-wrapper {
+  flex-grow: 1;
   background-color: var(--light-bg);
 }
 
@@ -299,7 +300,7 @@ img {
 }
 
 .url-shortener {
-
+  position: relative;
 }
 
 
@@ -309,6 +310,7 @@ img {
   align-items: center;
   border-radius: 10px;
   padding: 52px 64px 52px;
+  margin-bottom: 24px;
   background-color: #3A3054;
   background-image: url('../img/purple-bg.svg'),
   url('../img/purple-bg.svg');
@@ -336,10 +338,6 @@ img {
   border-radius: 10px;
 }
 
-
-.url-shortener__submit {
-}
-
 .url-shortener__input:not(:focus):not(:placeholder-shown):invalid {
   border-color: var(--error-color);
   color: rgba(244, 99, 99);
@@ -363,7 +361,51 @@ img {
 }
 
 
+/* Url shortener results */
+.url-shortener__results {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-90px);
+}
 
+.url-shortener__result {
+  display: flex;
+  align-items: center;
+  max-width: 1110px;
+  width: 100%;
+  padding: 16px 24px 16px 18px;
+  margin-right: 24px;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+}
+
+.url-shortener__result:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.url-shortener__original-link {
+  margin-right: auto;
+  color: var(--text-color-dark);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.url-shortener__short-link {
+  margin-right: 24px;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.button {
+}
+.button--small {
+}
+.button--rectangle-small {
+}
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
