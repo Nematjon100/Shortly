@@ -175,7 +175,6 @@ select:-webkit-autofill:focus {
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
-  background-color: var(--light-bg);
 }
 
 
@@ -304,9 +303,6 @@ select:-webkit-autofill:focus {
   color: var(--text-color);
 }
 
-.hero__link {
-}
-
 
 /* URL-SHORTENER */
 .shortener-features-wrapper {
@@ -314,13 +310,9 @@ select:-webkit-autofill:focus {
   background-color: var(--light-bg);
 }
 
-.shortener-features-wrapper__url-shortener {
-}
-
 .url-shortener {
   position: relative;
 }
-
 
 .url-shortener__form {
   position: relative;
@@ -466,15 +458,16 @@ padding-bottom: 120px;
 .features__list  {
   position: relative;
   display: flex;
+  align-items: flex-start;
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
 .features__item {
-  align-self: start;
+  width: 100%;
+  min-width: 350px;
   position: relative;
-  display: block;
   padding: 77px 32px 40px;
   background-color: #fff;
   border-radius: 5px;
@@ -508,12 +501,6 @@ padding-bottom: 120px;
   z-index: 11;
 }
 
-.features__icon {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-}
-
 .features__title {
   margin-top: 0;
   margin-bottom: 12px;
@@ -541,6 +528,42 @@ padding-bottom: 120px;
   z-index: 0;
 }
 
+
+/* CTA */
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 57px;
+  padding-bottom: 57px;
+  background-color: #3A3054;
+  background-image: url('../img/purple-bg.svg'),
+  url('../img/purple-bg.svg'),
+  url('../img/purple-bg.svg');
+  background-repeat: no-repeat;
+  background-position: -200px -290px, 200px 160px, 1000px -140px ;
+  background-size: auto, auto, auto;
+}
+
+.cta__heading {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #fff;
+  text-align: center;
+}
+
+.cta__button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-button {
+}
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
