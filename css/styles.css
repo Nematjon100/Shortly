@@ -424,7 +424,9 @@ select:-webkit-autofill:focus {
   text-decoration: none;
 }
 
-
+.copy-button--copied {
+  background-color: #3A3054;
+}
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
