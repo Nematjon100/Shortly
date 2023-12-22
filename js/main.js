@@ -18,6 +18,8 @@ if (elUrlShortener) {
       evt.target.textContent = 'Copied!';
       evt.target.classList.add('copy-button--copied');
 
+      navigator.clipboard.writeText(evt.target.previousElementSibling.textContent);
+
       setTimeout(function () {
         evt.target.textContent = 'Copy';
         evt.target.classList.remove('copy-button--copied');

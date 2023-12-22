@@ -312,7 +312,6 @@ select:-webkit-autofill:focus {
 .shortener-features-wrapper {
   flex-grow: 1;
   background-color: var(--light-bg);
-  height: 100%;
 }
 
 .shortener-features-wrapper__url-shortener {
@@ -426,6 +425,120 @@ select:-webkit-autofill:focus {
 
 .copy-button--copied {
   background-color: #3A3054;
+}
+
+
+/* Features */
+.index-features {
+padding-bottom: 120px;
+}
+
+.index-features__top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 13px;
+  margin-bottom: 100px;
+}
+
+.index-features__title {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: var(--text-color-dark);
+}
+
+.index-features__text {
+  margin: 0;
+  width: 100%;
+  max-width: 540px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.features__list  {
+  position: relative;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.features__item {
+  align-self: start;
+  position: relative;
+  display: block;
+  padding: 77px 32px 40px;
+  background-color: #fff;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.features__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features__item:nth-child(2) {
+  margin-top: 44px;
+}
+
+.features__item:nth-child(3) {
+  margin-top: 88px;
+}
+
+.feature__icon-wrapper {
+  position: absolute;
+  left: 32px;
+  top: -44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  height: 88px;
+  margin-bottom: 33px;
+  border-radius: 50%;
+  background-color: #3A3054;
+  z-index: 11;
+}
+
+.features__icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.features__title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 22px;
+  line-height: normal;
+  font-weight: bold;
+  color: var(--text-color-dark);
+}
+
+.features__info {
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.features__green-line {
+  position: absolute;
+  top: 130px;
+  width: 100%;
+  max-width: 1050px;
+  height: 8px;
+  margin: 20px;
+  border: 0;
+  background-color: var(--accent-color);
+  z-index: 0;
 }
 
 @media
