@@ -575,6 +575,10 @@ padding-bottom: 120px;
   align-items: flex-start;
 }
 
+.footer__logo {
+  color: #fff;
+}
+
 .footer__list-wrapper {
   width: 100%;
   max-width: 460px;
@@ -644,11 +648,22 @@ padding-bottom: 120px;
   display: flex;
 }
 
-.footer__socials-icon {
+
+.socials-icon{
   width: 24px;
   height: 24px;
   object-fit: contain;
+  color: #fff;
 }
+
+.socials-icon:hover {
+  color: var(--accent-color);
+}
+
+.socials-icon:active {
+  opacity: 0.6;
+}
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
