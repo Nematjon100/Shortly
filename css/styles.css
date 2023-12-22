@@ -624,6 +624,10 @@ padding-bottom: 120px;
   color: var(--accent-color);
 }
 
+.footer__link:active {
+  opacity: 0.6;
+}
+
 .footer__socials-list {
   display: flex;
   align-items: center;
